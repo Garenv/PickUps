@@ -1,0 +1,10 @@
+.Title {
+    width: 100%;
+    background-image: url("../../images/foodTruck.png");
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 20px 0;
+    color: darkblue;
+    box-sizing: border-box;
+    position: relative;
+}

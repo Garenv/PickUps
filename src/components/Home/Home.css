@@ -1,0 +1,24 @@
+.Bam {
+    text-align: center;
+}
+
+.UserEmail {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @media screen and (max-width: 360px){
+        .UserEmail {
+            font-size: 25px;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .UserEmail {
+            font-size: 25px;
+        }
+    }
+}

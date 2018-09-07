@@ -1,0 +1,129 @@
+.FoodSelected {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 30px;
+    letter-spacing: -2.2px;
+    word-spacing: -0.6px;
+    text-decoration: none;
+    font-variant: normal;
+    text-transform: none;
+    animation: blinker 1.2s linear infinite;
+    font-weight: bold;
+}
+
+@keyframes blinker {
+    50% {opacity: 0;}
+    from {color: blue;}
+    to {color: blue;}
+}
+
+.bothButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AddButton {
+    border: 5px solid #0a3c59;
+    background: #519c3e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#65d6a3), to(#519c3e));
+    background: -webkit-linear-gradient(top, #65d6a3, #519c3e);
+    background: -moz-linear-gradient(top, #65d6a3, #519c3e);
+    background: -ms-linear-gradient(top, #65d6a3, #519c3e);
+    background: -o-linear-gradient(top, #65d6a3, #519c3e);
+    background-image: -ms-linear-gradient(top, #65d6a3 0%, #519c3e 100%);
+    padding: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    text-shadow: #7fbd8d 0 1px 0;
+    color: #06426c;
+    font-size: medium;
+    font-family: helvetica, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.AddButton:hover {
+    border: 5px solid #0a3c59;
+    text-shadow: #1e4158 0 1px 0;
+    background: #3e779d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#85d665), to(#3e779d));
+    background: -webkit-linear-gradient(top, #85d665, #3e779d);
+    background: -moz-linear-gradient(top, #85d665, #3e779d);
+    background: -ms-linear-gradient(top, #85d665, #3e779d);
+    background: -o-linear-gradient(top, #85d665, #3e779d);
+    background-image: -ms-linear-gradient(top, #85d665 0%, #3e779d 100%);
+    color: #fff;
+}
+.AddButton:active {
+    text-shadow: #1e4158 0 1px 0;
+    border: 5px solid #0a3c59;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#3e779d));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+    background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+    color: #fff;
+}
+
+
+.SubtractButton {
+    border: 5px solid #0a3c59;
+    background: #519c3e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d60016), to(#d60016));
+    background: -webkit-linear-gradient(top, #d60100, #d6000c);
+    background: -moz-linear-gradient(top, #d6000c, #d60100);
+    background: -ms-linear-gradient(top, #d6031b, #d60600);
+    background: -o-linear-gradient(top, #d60600, #d6000e);
+    background-image: -ms-linear-gradient(top, #d6000e 0%, #d6031b 100%);
+    padding: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    text-shadow: #7fbd8d 0 1px 0;
+    color: #06426c;
+    font-size: medium;
+    font-family: helvetica, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.SubtractButton:hover {
+    border: 5px solid #0a3c59;
+    text-shadow: #1e4158 0 1px 0;
+    background: #3e779d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d60016), to(#d60016));
+    background: -webkit-linear-gradient(top, #d60100, #d6000c);
+    background: -moz-linear-gradient(top, #d6000c, #d60100);
+    background: -ms-linear-gradient(top, #d6031b, #d60600);
+    background: -o-linear-gradient(top, #d60600, #d6000e);
+    background-image: -ms-linear-gradient(top, #d6000e 0%, #d6031b 100%);
+    color: #fff;
+}
+
+.SubtractButton:active {
+    text-shadow: #1e4158 0 1px 0;
+    border: 5px solid #0a3c59;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#3e779d));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+    background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+    color: #fff;
+}
+
+.Clicks {
+    font-size: 40px;
+    text-align: center;
+}
