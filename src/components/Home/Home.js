@@ -45,7 +45,9 @@ class Home extends Component {
                 <h1 className={classes.Bam}>Welcome! Choose your favorite truck!</h1>
 
                 <button onClick={this.foodHandler.bind(this)} className="btn btn-primary btn-lg btn-block">Taco Del Rey</button>
-                <button type="button" className="btn btn-secondary btn-lg btn-block">Some other shit</button>
+                <button type="button" className="btn btn-secondary btn-lg btn-block">Local Deli</button>
+                <button type="button" className="btn btn-secondary btn-lg btn-block">Local Restaurant</button>
+
             </div>
         );
     }
