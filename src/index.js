@@ -13,7 +13,7 @@ import { createStore, combineReducers } from 'redux';
 import showBackdropReducer from "./store/showBackdropReducer";
 
 const rootReducer = combineReducers({
-   isOpen: checkOutModalReducer,
+    isOpen: checkOutModalReducer,
     closePayModalButton: payModalButtonReducer,
     showPayModal: showPayModalReducer,
     showBackdropModal: showBackdropReducer

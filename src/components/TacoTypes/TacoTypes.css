@@ -72,7 +72,6 @@
     color: #fff;
 }
 
-
 .SubtractButton {
     border: 5px solid #0a3c59;
     background: #519c3e;
@@ -127,3 +126,11 @@
     font-size: 40px;
     text-align: center;
 }
+
+.DisplayEmailEat {
+    text-align: center;
+}
+
+/*.AllButtons {*/
+    /*margin-bottom: 50%;*/
+/*}*/

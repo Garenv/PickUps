@@ -93,12 +93,38 @@ class TacoTypes extends Component {
         });
     }
 
+    displayEmail = () => {
+        let user = firebase.auth().currentUser;
+        let userEmail = " ";
+
+        if (user !== null) {
+            user.providerData.forEach(function (profile) {
+                console.log(userEmail);
+                userEmail = profile.email;
+            });
+        }
+
+        return (
+            <div className={classes.DisplayEmailEat}>
+                <p>Welcome, {userEmail}!</p>
+                <p>What would you like to eat?</p>
+            </div>
+
+        );
+    };
+
     render() {
         return (
             <Aux>
-                {Object.keys(this.items).map(key => (
-                    <FoodButton clicked={() => this.selectFood(key)} key={key} label={this.items[key]}/>
-                ))}
+                {
+                    <h4>{this.displayEmail()}</h4>
+                }
+
+                <div className={classes.AllButtons}>
+                    {Object.keys(this.items).map(key => (
+                        <FoodButton clicked={() => this.selectFood(key)} key={key} label={this.items[key]}/>
+                    ))}
+                </div>
 
                 <Modal isOpen={this.props.isOpen}>
                     {this.state.selectedItems.map(key => (
@@ -115,9 +141,7 @@ class TacoTypes extends Component {
                         </div>
                     ))}
 
-                    {/*<PayModalButton showPayModal={() => this.props.closeModalRedux()}/>*/}
-
-                    <PayModal showPayModal={this.props.modalIsOpen} closePayModal={() => this.props.closeModalPayRedux()}/>
+                    <PayModal showPayModal={this.props.showPayModal} closePayModal={() => this.props.closeModalPayRedux()}/>
                     <PayModalBackdrop showPayModalBackdrop={this.props.showBackdropModal} />
 
                     <PayModalButton openPayModalButton={() => this.props.showPayModalRedux()} />
