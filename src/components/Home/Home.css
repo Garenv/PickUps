@@ -9,6 +9,10 @@
     text-align: right;
 }
 
+.DisplayEmailEat {
+    text-align: center;
+}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     @media screen and (max-width: 360px){
         .UserEmail {

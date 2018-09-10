@@ -3,6 +3,8 @@ import classes from './Home.css';
 import TacoTypes from '../../components/TacoTypes/TacoTypes';
 import firebase from "firebase";
 
+import { Link } from 'react-router-dom';
+
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -13,7 +15,7 @@ class Home extends Component {
     }
 
     foodHandler () {
-        this.setState({flag: true})
+        this.setState({flag: true});
     }
 
     displayName = () => {
@@ -28,7 +30,9 @@ class Home extends Component {
         }
 
         return (
-            <p className={classes.UserEmail}>Welcome, {userEmail}!</p>
+            <div className={classes.DisplayEmailEat}>
+                <p>Welcome, {userEmail}!</p>
+            </div>
         );
     };
 
@@ -42,9 +46,17 @@ class Home extends Component {
         return (
             <div>
                 <h1>{this.displayName()}</h1>
-                <h1 className={classes.Bam}>Welcome! Choose your favorite truck!</h1>
+                <h1 className={classes.Bam}>Choose your favorite truck!</h1>
+                {/*<button onClick={this.foodHandler.bind(this)} className="btn btn-primary btn-lg btn-block">Taco Del Rey</button>*/}
 
-                <button onClick={this.foodHandler.bind(this)} className="btn btn-primary btn-lg btn-block">Taco Del Rey</button>
+                <Link to={{
+                    pathname: '/TacoTypes',
+                    // hash: '#submit',
+                    // search: '?quick-submit=true'
+                }}>
+                    <button onClick={this.foodHandler.bind(this)} className="btn btn-primary btn-lg btn-block">Taco Del Rey</button>
+                </Link>
+
                 <button type="button" className="btn btn-secondary btn-lg btn-block">Local Deli</button>
                 <button type="button" className="btn btn-secondary btn-lg btn-block">Local Restaurant</button>
 

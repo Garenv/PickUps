@@ -109,16 +109,13 @@ class TacoTypes extends Component {
                 <p>Welcome, {userEmail}!</p>
                 <p>What would you like to eat?</p>
             </div>
-
         );
     };
 
     render() {
         return (
             <Aux>
-                {
-                    <h4>{this.displayEmail()}</h4>
-                }
+                {<h4>{this.displayEmail()}</h4>}
 
                 <div className={classes.AllButtons}>
                     {Object.keys(this.items).map(key => (

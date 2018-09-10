@@ -4,13 +4,17 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+// Redux
+import { Provider } from 'react-redux';
+import { createStore, combineReducers } from 'redux';
 import checkOutModalReducer from './store/checkOutModalReducer';
 import payModalButtonReducer from './store/payModalButtonReducer';
 import showPayModalReducer from './store/showPayModalReducer';
-
-import { Provider } from 'react-redux';
-import { createStore, combineReducers } from 'redux';
 import showBackdropReducer from "./store/showBackdropReducer";
+
+// Routing
+import { BrowserRouter } from 'react-router-dom';
+
 
 const rootReducer = combineReducers({
     isOpen: checkOutModalReducer,
@@ -21,5 +25,5 @@ const rootReducer = combineReducers({
 
 const store = createStore(rootReducer);
 
-ReactDOM.render(<Provider store={store}><App/></Provider>, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter><Provider store={store}><App/></Provider></BrowserRouter>, document.getElementById('root'));
 registerServiceWorker();

@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import fire from '../../config/Fire';
-import firebase from 'firebase';
 import classes from './Login.css';
+import Home from '../Home/Home';
+
+import { Link } from 'react-router-dom';
+
 
 class Login extends Component {
     constructor(props) {
@@ -11,7 +14,8 @@ class Login extends Component {
         this.signup = this.signup.bind(this);
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            flag: false
         };
     }
 
@@ -19,12 +23,19 @@ class Login extends Component {
         this.setState({[e.target.name]: e.target.value});
     }
 
-    login(e) {
-        e.preventDefault();
+    login() {
         fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
         }).catch((error) => {
             console.log(error);
         });
+
+        this.setState({flag: true});
+
+        const next = this.state.flag;
+
+        if (next) {
+            return <Home/>;
+        }
     }
 
     signup(e) {
@@ -39,9 +50,10 @@ class Login extends Component {
     }
 
     render() {
+
+
         return (
             <div className={classes.Middle}>
-
                 <div className="form-group">
                     <h1>Email address</h1>
                     <input value={this.state.email} onChange={this.handleChange} type="email" name="email"
@@ -52,7 +64,16 @@ class Login extends Component {
                     <input value={this.state.password} onChange={this.handleChange} type="password" name="password"
                            className="form-control" placeholder="Password"/>
                 </div>
-                <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
+
+
+                <Link to={{
+                    pathname: '/Home'
+                }}>
+                    <button type="submit" onClick={this.login.bind(this)} className="btn btn-primary">Login</button>
+                </Link>
+
+
+
                 <button onClick={this.signup}>Signup</button>
             </div>
         );
