@@ -3,7 +3,7 @@ import fire from '../../config/Fire';
 import classes from './Login.css';
 import Home from '../Home/Home';
 
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 
 class Login extends Component {
@@ -28,14 +28,6 @@ class Login extends Component {
         }).catch((error) => {
             console.log(error);
         });
-
-        this.setState({flag: true});
-
-        const next = this.state.flag;
-
-        if (next) {
-            return <Home/>;
-        }
     }
 
     signup(e) {
@@ -50,8 +42,6 @@ class Login extends Component {
     }
 
     render() {
-
-
         return (
             <div className={classes.Middle}>
                 <div className="form-group">
@@ -65,13 +55,11 @@ class Login extends Component {
                            className="form-control" placeholder="Password"/>
                 </div>
 
-
                 <Link to={{
-                    pathname: '/Home'
+                    pathname: '/ChooseTruck'
                 }}>
                     <button type="submit" onClick={this.login.bind(this)} className="btn btn-primary">Login</button>
                 </Link>
-
 
 
                 <button onClick={this.signup}>Signup</button>

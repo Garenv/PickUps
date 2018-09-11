@@ -5,12 +5,15 @@ import axios from '../../food-selected';
 import * as actionType from '../../store/actions';
 import firebase from 'firebase';
 
+import { Link, Route, withRouter } from 'react-router-dom';
+
 import Aux from '../../hoc/Aux';
 import FoodButton from '../../components/FoodButton/FoodButton';
 import PayModalButton from '../../containers/PayModalButton/PayModalButton';
 import CheckoutButton from '../../containers/CheckoutButton/CheckoutButton';
 import PayModal from '../../components/PayModal/PayModal';
 import PayModalBackdrop from '../../components/PayModalBackdrop/PayModalBackdrop';
+import Home from '../../components/Home/Home';
 
 import classes from './TacoTypes.css';
 
@@ -142,10 +145,17 @@ class TacoTypes extends Component {
                     <PayModalBackdrop showPayModalBackdrop={this.props.showBackdropModal} />
 
                     <PayModalButton openPayModalButton={() => this.props.showPayModalRedux()} />
-
                 </Modal>
-
+                {/*<Route path="/" exact component={Home} />*/}
                 <CheckoutButton clicked={() => this.props.openModalRedux()}/>
+
+                {/*<Link to={{pathname: '/ChooseTruck'}} >*/}
+                    {/*<a onClick='../Home/Home.js'>back</a>*/}
+                {/*</Link>*/}
+                {/*<Route path="/" exact component={Home} />*/}
+
+                {/*/!*<Link to={{pathname: '/'}} />*!/*/}
+
             </Aux>
         );
     }
@@ -164,14 +174,8 @@ const mapDispatchToProps = dispatch => {
     return {
         openModalRedux: () => dispatch({type: actionType.OPEN_MODAL}),
         showPayModalRedux: () => dispatch({type: actionType.SHOW_PAY_MODAL}),
-        showBackdropModalRedux: () => dispatch({type: actionType.SHOW_BACKDROP}),
+
         closeModalPayRedux: () => dispatch({type: actionType.CLOSE_MODAL})
-
-
-
-
-        // openPayModal: () => dispatch({type: actionType.OPEN_PAY_MODAL}),
-        // closeModalRedux: () => dispatch({type: actionType.CLOSE_MODAL})
     };
 };
 

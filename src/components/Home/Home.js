@@ -3,7 +3,7 @@ import classes from './Home.css';
 import TacoTypes from '../../components/TacoTypes/TacoTypes';
 import firebase from "firebase";
 
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 class Home extends Component {
     constructor(props) {
@@ -57,9 +57,11 @@ class Home extends Component {
                     <button onClick={this.foodHandler.bind(this)} className="btn btn-primary btn-lg btn-block">Taco Del Rey</button>
                 </Link>
 
+                {/*<Route path="/ChooseTruck" component={Home}/>*/}
+                <Route path="/" exact component={Home} />
                 <button type="button" className="btn btn-secondary btn-lg btn-block">Local Deli</button>
                 <button type="button" className="btn btn-secondary btn-lg btn-block">Local Restaurant</button>
-
+                <p>hey</p>
             </div>
         );
     }
