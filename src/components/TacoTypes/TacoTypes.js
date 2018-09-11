@@ -136,7 +136,7 @@ class TacoTypes extends Component {
                                 <button className={classes.AddButton} onClick={() => this.selectFood(key)}>+</button>
                                 <button className={classes.SubtractButton} onClick={() => this.deselectFood(key)}>-
                                 </button>
-                                <p className={classes.Clicks} key={key}><b>X</b> {this.state.foodClicks[key]}</p>
+                                <p className={classes.Clicks} key={key}> <b>X</b> {this.state.foodClicks[key]}</p>
                             </div>
                         </div>
                     ))}
@@ -146,15 +146,12 @@ class TacoTypes extends Component {
 
                     <PayModalButton openPayModalButton={() => this.props.showPayModalRedux()} />
                 </Modal>
-                {/*<Route path="/" exact component={Home} />*/}
+
                 <CheckoutButton clicked={() => this.props.openModalRedux()}/>
 
-                {/*<Link to={{pathname: '/ChooseTruck'}} >*/}
-                    {/*<a onClick='../Home/Home.js'>back</a>*/}
-                {/*</Link>*/}
-                {/*<Route path="/" exact component={Home} />*/}
-
-                {/*/!*<Link to={{pathname: '/'}} />*!/*/}
+                <Link to={{pathname: '/ChooseTruck'}} >
+                    <a onClick='../Home/Home.js'>back</a>
+                </Link>
 
             </Aux>
         );
@@ -174,7 +171,6 @@ const mapDispatchToProps = dispatch => {
     return {
         openModalRedux: () => dispatch({type: actionType.OPEN_MODAL}),
         showPayModalRedux: () => dispatch({type: actionType.SHOW_PAY_MODAL}),
-
         closeModalPayRedux: () => dispatch({type: actionType.CLOSE_MODAL})
     };
 };

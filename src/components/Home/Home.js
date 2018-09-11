@@ -58,10 +58,10 @@ class Home extends Component {
                 </Link>
 
                 {/*<Route path="/ChooseTruck" component={Home}/>*/}
-                <Route path="/" exact component={Home} />
+                {/*<Route path="/" exact component={Home} />*/}
                 <button type="button" className="btn btn-secondary btn-lg btn-block">Local Deli</button>
                 <button type="button" className="btn btn-secondary btn-lg btn-block">Local Restaurant</button>
-                <p>hey</p>
+
             </div>
         );
     }
