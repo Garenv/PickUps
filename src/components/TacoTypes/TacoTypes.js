@@ -5,7 +5,7 @@ import axios from '../../food-selected';
 import * as actionType from '../../store/actions';
 import firebase from 'firebase';
 
-import { Link, Route, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Aux from '../../hoc/Aux';
 import FoodButton from '../../components/FoodButton/FoodButton';
@@ -13,7 +13,8 @@ import PayModalButton from '../../containers/PayModalButton/PayModalButton';
 import CheckoutButton from '../../containers/CheckoutButton/CheckoutButton';
 import PayModal from '../../components/PayModal/PayModal';
 import PayModalBackdrop from '../../components/PayModalBackdrop/PayModalBackdrop';
-import Home from '../../components/Home/Home';
+
+// import Home from '../../components/Home/Home';
 
 import classes from './TacoTypes.css';
 
@@ -120,11 +121,13 @@ class TacoTypes extends Component {
             <Aux>
                 {<h4>{this.displayEmail()}</h4>}
 
-                <div className={classes.AllButtons}>
-                    {Object.keys(this.items).map(key => (
-                        <FoodButton clicked={() => this.selectFood(key)} key={key} label={this.items[key]}/>
-                    ))}
-                </div>
+                <Link to={{pathname: '/ChooseTruck'}} >
+                    <button className={classes.BackButton} onClick='../Home/Home.js'>back</button>
+                </Link>
+
+                {Object.keys(this.items).map(key => (
+                    <FoodButton clicked={() => this.selectFood(key)} key={key} label={this.items[key]}/>
+                ))}
 
                 <Modal isOpen={this.props.isOpen}>
                     {this.state.selectedItems.map(key => (
@@ -134,8 +137,7 @@ class TacoTypes extends Component {
 
                             <div className={classes.bothButtons}>
                                 <button className={classes.AddButton} onClick={() => this.selectFood(key)}>+</button>
-                                <button className={classes.SubtractButton} onClick={() => this.deselectFood(key)}>-
-                                </button>
+                                <button className={classes.SubtractButton} onClick={() => this.deselectFood(key)}>-</button>
                                 <p className={classes.Clicks} key={key}> <b>X</b> {this.state.foodClicks[key]}</p>
                             </div>
                         </div>

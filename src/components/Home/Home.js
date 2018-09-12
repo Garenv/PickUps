@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import classes from './Home.css';
 import TacoTypes from '../../components/TacoTypes/TacoTypes';
 import firebase from "firebase";
+import LogoutButton from '../../containers/LogoutButton/LogoutButton';
+import Title from '../../components/Title/Title';
 
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
     constructor(props) {
@@ -45,7 +47,7 @@ class Home extends Component {
 
         return (
             <div>
-                <h1>{this.displayName()}</h1>
+                <h1>{this.displayName()}</h1><Title authenticated={true}/>
                 <h1 className={classes.Bam}>Choose your favorite truck!</h1>
                 {/*<button onClick={this.foodHandler.bind(this)} className="btn btn-primary btn-lg btn-block">Taco Del Rey</button>*/}
 
@@ -61,7 +63,6 @@ class Home extends Component {
                 {/*<Route path="/" exact component={Home} />*/}
                 <button type="button" className="btn btn-secondary btn-lg btn-block">Local Deli</button>
                 <button type="button" className="btn btn-secondary btn-lg btn-block">Local Restaurant</button>
-
             </div>
         );
     }

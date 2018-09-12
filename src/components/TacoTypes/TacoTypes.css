@@ -122,6 +122,55 @@
     color: #fff;
 }
 
+.BackButton {
+    border: 5px solid #401818;
+    background: #a265d4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#65d672), to(#a265d4));
+    background: -webkit-linear-gradient(top, #65d672, #a265d4);
+    background: -moz-linear-gradient(top, #65d672, #a265d4);
+    background: -ms-linear-gradient(top, #65d672, #a265d4);
+    background: -o-linear-gradient(top, #65d672, #a265d4);
+    background-image: -ms-linear-gradient(top, #65d672 0%, #a265d4 100%);
+    padding: 12px 8px;
+    padding-right: 23px 46px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    text-shadow: #bd7f7f 0 1px 0;
+    color: #066b6b;
+    font-size: 24px;
+    font-family: helvetica, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.BackButton:hover {
+    border: 5px solid #401818;
+    text-shadow: #3d571e 0 1px 0;
+    background: #723e9c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d66565), to(#723e9c));
+    background: -webkit-linear-gradient(top, #d66565, #723e9c);
+    background: -moz-linear-gradient(top, #d66565, #723e9c);
+    background: -ms-linear-gradient(top, #d66565, #723e9c);
+    background: -o-linear-gradient(top, #d66565, #723e9c);
+    background-image: -ms-linear-gradient(top, #d66565 0%, #723e9c 100%);
+    color: #ffffff;
+}
+.BackButton:active {
+    text-shadow: #1e4158 0 1px 0;
+    border: 5px solid #403d18;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e4e9c), to(#723e9c));
+    background: -webkit-linear-gradient(top, #3e4e9c, #65a9d7);
+    background: -moz-linear-gradient(top, #3e4e9c, #65a9d7);
+    background: -ms-linear-gradient(top, #3e4e9c, #65a9d7);
+    background: -o-linear-gradient(top, #3e4e9c, #65a9d7);
+    background-image: -ms-linear-gradient(top, #3e4e9c 0%, #65a9d7 100%);
+    color: #ffffff;
+}
+
 .Clicks {
     font-size: 40px;
     text-align: center;
@@ -130,7 +179,3 @@
 .DisplayEmailEat {
     text-align: center;
 }
-
-/*.AllButtons {*/
-    /*margin-bottom: 50%;*/
-/*}*/

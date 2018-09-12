@@ -43,6 +43,7 @@ class Login extends Component {
 
     render() {
         return (
+
             <div className={classes.Middle}>
                 <div className="form-group">
                     <h1>Email address</h1>
