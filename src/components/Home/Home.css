@@ -1,5 +1,6 @@
 .Bam {
     text-align: center;
+    margin-left: 7%;
 }
 
 .UserEmail {
@@ -10,7 +11,7 @@
 }
 
 .DisplayEmailEat {
-    text-align: center;
+    font-family: Rockwell;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

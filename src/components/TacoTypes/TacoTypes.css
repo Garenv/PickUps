@@ -144,8 +144,15 @@
     font-size: 24px;
     font-family: helvetica, serif;
     text-decoration: none;
-    vertical-align: middle;
+    vertical-align: top;
+
+    /* moves button up */
+    position: fixed;
+    top: 12%;
+    left: 0;
+
 }
+
 .BackButton:hover {
     border: 5px solid #401818;
     text-shadow: #3d571e 0 1px 0;
@@ -177,5 +184,9 @@
 }
 
 .DisplayEmailEat {
+    text-align: center;
+}
+
+h2 {
     text-align: center;
 }

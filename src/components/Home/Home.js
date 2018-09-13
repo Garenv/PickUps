@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import classes from './Home.css';
-import TacoTypes from '../../components/TacoTypes/TacoTypes';
-import firebase from "firebase";
-import LogoutButton from '../../containers/LogoutButton/LogoutButton';
-import Title from '../../components/Title/Title';
-
 import { Link } from 'react-router-dom';
+import classes from './Home.css';
+import firebase from "firebase";
+
+import TacoTypes from '../../components/TacoTypes/TacoTypes';
+import Title from '../../components/Title/Title';
 
 class Home extends Component {
     constructor(props) {
@@ -32,8 +31,8 @@ class Home extends Component {
         }
 
         return (
-            <div className={classes.DisplayEmailEat}>
-                <p>Welcome, {userEmail}!</p>
+            <div>
+                <p className={classes.DisplayEmailEat}>Welcome, {userEmail}!</p>
             </div>
         );
     };
@@ -48,20 +47,15 @@ class Home extends Component {
         return (
             <div>
                 <Title authenticated={true}/>
-                <h1>{this.displayName()}</h1>
+                <h3>{this.displayName()}</h3>
                 <h1 className={classes.Bam}>Choose your favorite truck!</h1>
-                {/*<button onClick={this.foodHandler.bind(this)} className="btn btn-primary btn-lg btn-block">Taco Del Rey</button>*/}
 
                 <Link to={{
-                    pathname: '/TacoTypes',
-                    // hash: '#submit',
-                    // search: '?quick-submit=true'
+                    pathname: '/TacoTypes'
                 }}>
                     <button onClick={this.foodHandler.bind(this)} className="btn btn-primary btn-lg btn-block">Taco Del Rey</button>
                 </Link>
 
-                {/*<Route path="/ChooseTruck" component={Home}/>*/}
-                {/*<Route path="/" exact component={Home} />*/}
                 <button type="button" className="btn btn-secondary btn-lg btn-block">Local Deli</button>
                 <button type="button" className="btn btn-secondary btn-lg btn-block">Local Restaurant</button>
             </div>

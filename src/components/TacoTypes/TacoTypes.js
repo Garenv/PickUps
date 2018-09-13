@@ -35,8 +35,8 @@ class TacoTypes extends Component {
         };
 
         this.items = {
-            chickenTaco: 'Chicken Taco',
-            beefTaco: 'Beef Taco',
+            chickenTaco: 'Button One',
+            beefTaco: 'Button Two',
             chickenBurrito: 'Chicken Burrito',
             beefBurrito: 'Beef Burrito'
         };
@@ -111,7 +111,6 @@ class TacoTypes extends Component {
         return (
             <div className={classes.DisplayEmailEat}>
                 <p>Welcome, {userEmail}!</p>
-                <p>What would you like to eat?</p>
             </div>
         );
     };
@@ -120,10 +119,14 @@ class TacoTypes extends Component {
         return (
             <Aux>
                 {<h4>{this.displayEmail()}</h4>}
+                <h2>What would you like to eat?</h2>
 
-                <Link to={{pathname: '/ChooseTruck'}} >
-                    <button className={classes.BackButton} onClick='../Home/Home.js'>back</button>
-                </Link>
+                {/* Go back to truck selection screen*/}
+                <div className={classes.BackButtonContainer}>
+                    <Link to={{pathname: '/ChooseTruck'}} >
+                        <button className={classes.BackButton} onClick='../Home/Home.js'>back</button>
+                    </Link>
+                </div>
 
                 {Object.keys(this.items).map(key => (
                     <FoodButton clicked={() => this.selectFood(key)} key={key} label={this.items[key]}/>
