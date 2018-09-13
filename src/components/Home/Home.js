@@ -47,7 +47,8 @@ class Home extends Component {
 
         return (
             <div>
-                <h1>{this.displayName()}</h1><Title authenticated={true}/>
+                <Title authenticated={true}/>
+                <h1>{this.displayName()}</h1>
                 <h1 className={classes.Bam}>Choose your favorite truck!</h1>
                 {/*<button onClick={this.foodHandler.bind(this)} className="btn btn-primary btn-lg btn-block">Taco Del Rey</button>*/}
 

@@ -4,8 +4,6 @@
     <list default="true" id="d2fa8945-9cb0-4d74-aa02-078e2440c23b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Title/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Title/Title.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/LogoutButton/LogoutButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/LogoutButton/LogoutButton.css" afterDir="false" />
@@ -22,11 +20,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Title.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TacoTypes.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Title.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Title/Title.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="255">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -34,14 +44,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
+      <file leaf-file-name="Title.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Title/Title.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+            <state relative-caret-position="150">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogoutButton.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/LogoutButton/LogoutButton.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -56,6 +84,23 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FoodButton.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/FoodButton/FoodButton.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -78,6 +123,8 @@
       <find>Welcome</find>
       <find>url</find>
       <find>router</find>
+      <find>HEY</find>
+      <find>hey</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,17 +170,17 @@
         <option value="$PROJECT_DIR$/src/containers/PayModalButton/PayModalButton.js" />
         <option value="$PROJECT_DIR$/src/components/PayModal/PayModal.js" />
         <option value="$PROJECT_DIR$/src/store/dontShowPayModal.js" />
-        <option value="$PROJECT_DIR$/src/components/Title/Title.css" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.css" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.css" />
-        <option value="$PROJECT_DIR$/src/containers/LogoutButton/LogoutButton.css" />
-        <option value="$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.js" />
         <option value="$PROJECT_DIR$/src/containers/LogoutButton/LogoutButton.js" />
         <option value="$PROJECT_DIR$/src/components/Login/Login.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
+        <option value="$PROJECT_DIR$/src/components/Title/Title.css" />
+        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Title/Title.js" />
+        <option value="$PROJECT_DIR$/src/containers/LogoutButton/LogoutButton.css" />
+        <option value="$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.js" />
       </list>
     </option>
   </component>
@@ -183,6 +230,13 @@
               <item name="pickups" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodButton" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pickups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pickups" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -191,6 +245,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pickups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pickups" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="PayModalBackdrop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pickups" type="b2602c69:ProjectViewProjectNode" />
@@ -310,18 +371,18 @@
       <workItem from="1536686605362" duration="746000" />
       <workItem from="1536694560153" duration="65000" />
       <workItem from="1536694755306" duration="249000" />
-      <workItem from="1536695242057" duration="16968000" />
+      <workItem from="1536695242057" duration="19472000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149654000" />
+    <option name="totallyTimeSpent" value="152158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="751" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49886104" visible="true" weight="0.19936457" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49886104" visible="true" weight="0.19936457" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -329,7 +390,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" sideWeight="0.5011389" side_tool="true" weight="0.19936457" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32874617" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32874617" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -505,33 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/LogoutButton/LogoutButton.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Login/Login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -541,6 +575,43 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Title/Title.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/LogoutButton/LogoutButton.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Title/Title.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/FoodButton/FoodButton.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/LogoutButton/LogoutButton.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -554,20 +625,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        <state relative-caret-position="109">
+          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Title/Title.js">
+    <entry file="file://$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="281">
+          <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

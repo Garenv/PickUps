@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import classes from './Title.css';
 import LogoutButton from '../../containers/LogoutButton/LogoutButton';
+import Aux from '../../hoc/Aux';
 
 class Title extends Component {
     constructor(props) {
@@ -14,10 +15,10 @@ class Title extends Component {
     render() {
         const { showLogoutButton } = this.state;
         return(
-            <div className="row" style={{"display": "flex"}}>
+            <Aux>
                 {showLogoutButton ? <LogoutButton/> : null}
                 {!showLogoutButton && <h1 className={classes.Title}>Pick Ups</h1>}
-            </div>
+            </Aux>
         );
     }
 }

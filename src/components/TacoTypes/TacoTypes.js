@@ -151,9 +151,7 @@ class TacoTypes extends Component {
 
                 <CheckoutButton clicked={() => this.props.openModalRedux()}/>
 
-                <Link to={{pathname: '/ChooseTruck'}} >
-                    <a onClick='../Home/Home.js'>back</a>
-                </Link>
+
 
             </Aux>
         );

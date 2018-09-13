@@ -7,7 +7,7 @@
     background: -ms-linear-gradient(top, rgba(46, 39, 214, 0.25), #d60600);
     background: -o-linear-gradient(top, #d60600, #d6000e);
     background-image: -ms-linear-gradient(top, #d6000e 0%, #d6031b 100%);
-    padding: 15px;
+    padding: 15px 30px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
