@@ -13,6 +13,7 @@ import PayModalButton from '../../containers/PayModalButton/PayModalButton';
 import CheckoutButton from '../../containers/CheckoutButton/CheckoutButton';
 import PayModal from '../../components/PayModal/PayModal';
 import PayModalBackdrop from '../../components/PayModalBackdrop/PayModalBackdrop';
+import Title from '../../components/Title/Title';
 
 // import Home from '../../components/Home/Home';
 
@@ -118,7 +119,7 @@ class TacoTypes extends Component {
     render() {
         return (
             <Aux>
-                {<h4>{this.displayEmail()}</h4>}
+                {<h4>{this.displayEmail()}</h4>}<Title authenticated={true}/>
                 <h2>What would you like to eat?</h2>
 
                 {/* Go back to truck selection screen*/}
