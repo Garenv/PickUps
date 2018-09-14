@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import fire from './config/Fire';
+
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Title from './components/Title/Title';
@@ -9,7 +10,7 @@ class App extends Component {
     constructor() {
         super();
         this.state = ({
-            user: null,
+            user: null
         });
         this.authListener = this.authListener.bind(this);
     }

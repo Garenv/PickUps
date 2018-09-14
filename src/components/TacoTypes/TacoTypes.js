@@ -119,18 +119,18 @@ class TacoTypes extends Component {
     render() {
         return (
             <Aux>
-                {<h4>{this.displayEmail()}</h4>}<Title authenticated={true}/>
-                <h2>What would you like to eat?</h2>
+                {<h3>{this.displayEmail()}</h3>}<Title authenticated={true}/>
+                <h1 className={classes.Eat}>What would you like to eat?</h1>
 
                 {/* Go back to truck selection screen*/}
-                <div className={classes.BackButtonContainer}>
+                <div>
                     <Link to={{pathname: '/ChooseTruck'}} >
-                        <button className={classes.BackButton} onClick='../Home/Home.js'>back</button>
+                        <button className={classes.BackButton} onClick='../Home/Home.js'>Back</button>
                     </Link>
                 </div>
 
-                {Object.keys(this.items).map(key => (
-                    <FoodButton clicked={() => this.selectFood(key)} key={key} label={this.items[key]}/>
+                {Object.keys(this.items).map((key, index) => (
+                    <FoodButton clicked={() => this.selectFood(key)} key={index && console.log(index)} label={this.items[key]}/>
                 ))}
 
                 <Modal isOpen={this.props.isOpen}>
@@ -138,7 +138,6 @@ class TacoTypes extends Component {
                         <div key={key}>
                             <p className={classes.FoodSelected} key={key}>{this.items[key]}</p>
                             <br/>
-
                             <div className={classes.bothButtons}>
                                 <button className={classes.AddButton} onClick={() => this.selectFood(key)}>+</button>
                                 <button className={classes.SubtractButton} onClick={() => this.deselectFood(key)}>-</button>

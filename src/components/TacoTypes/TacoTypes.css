@@ -184,8 +184,14 @@
 
 .DisplayEmailEat {
     text-align: center;
+    font-family: "Heiti TC";
 }
 
-h2 {
+.Eat {
+    font-family: Telugu MN; /* Songti TC */
+    text-align: center;
+}
+
+h3 {
     text-align: center;
 }
