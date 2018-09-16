@@ -18,7 +18,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 const rootReducer = combineReducers({
     isOpen: checkOutModalReducer,
-    closePayModalButton: payModalButtonReducer,
+    closeMainModalButton: payModalButtonReducer,
     showPayModal: showPayModalReducer,
     showBackdropModal: showBackdropReducer
 });

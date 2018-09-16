@@ -8,14 +8,13 @@ import firebase from 'firebase';
 import { Link } from 'react-router-dom';
 
 import Aux from '../../hoc/Aux';
-import FoodButton from '../../components/FoodButton/FoodButton';
+import FoodButton from '../Buttons/FoodButton';
 import PayModalButton from '../../containers/PayModalButton/PayModalButton';
 import CheckoutButton from '../../containers/CheckoutButton/CheckoutButton';
 import PayModal from '../../components/PayModal/PayModal';
 import PayModalBackdrop from '../../components/PayModalBackdrop/PayModalBackdrop';
+import CloseModal from '../../components/Buttons/CloseModal/CloseModal';
 import Title from '../../components/Title/Title';
-
-// import Home from '../../components/Home/Home';
 
 import classes from './TacoTypes.css';
 
@@ -130,7 +129,7 @@ class TacoTypes extends Component {
                 </div>
 
                 {Object.keys(this.items).map((key, index) => (
-                    <FoodButton clicked={() => this.selectFood(key)} key={index && console.log(index)} label={this.items[key]}/>
+                    <FoodButton clicked={() => this.selectFood(key)} key={index} label={this.items[key]}/>
                 ))}
 
                 <Modal isOpen={this.props.isOpen}>
@@ -139,23 +138,22 @@ class TacoTypes extends Component {
                             <p className={classes.FoodSelected} key={key}>{this.items[key]}</p>
                             <br/>
                             <div className={classes.bothButtons}>
-                                <button className={classes.AddButton} onClick={() => this.selectFood(key)}>+</button>
-                                <button className={classes.SubtractButton} onClick={() => this.deselectFood(key)}>-</button>
+                                <button key={key} className={classes.AddButton} onClick={() => this.selectFood(key)}>+</button>
+                                <button key={key} className={classes.SubtractButton} onClick={() => this.deselectFood(key)}>-</button>
                                 <p className={classes.Clicks} key={key}> <b>X</b> {this.state.foodClicks[key]}</p>
                             </div>
                         </div>
                     ))}
 
-                    <PayModal showPayModal={this.props.showPayModal} closePayModal={() => this.props.closeModalPayRedux()}/>
+                    <PayModal showPayModal={this.props.showPayModal} />
                     <PayModalBackdrop showPayModalBackdrop={this.props.showBackdropModal} />
-
                     <PayModalButton openPayModalButton={() => this.props.showPayModalRedux()} />
+
+                    <CloseModal closeMainModalButton={() => this.props.closeModalPayRedux()} />
+
                 </Modal>
 
                 <CheckoutButton clicked={() => this.props.openModalRedux()}/>
-
-
-
             </Aux>
         );
     }
@@ -166,7 +164,7 @@ const mapStateToProps = state => {
         isOpen: state.isOpen.isModalOpen,
         showPayModal: state.showPayModal.showPayModal,
         showBackdropModal: state.showBackdropModal.showBackdropModal,
-        closePayModalButton: state.closePayModalButton.closePayModalButton
+        closeMainModalButton: state.closeMainModalButton.closeMainModalButton
     };
 };
 
