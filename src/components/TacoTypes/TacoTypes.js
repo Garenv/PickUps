@@ -151,9 +151,17 @@ class TacoTypes extends Component {
 
                     <CloseModal closeMainModalButton={() => this.props.closeModalPayRedux()} />
 
+
                 </Modal>
 
                 <CheckoutButton clicked={() => this.props.openModalRedux()}/>
+
+                {this.state.selectedItems.map(key => (
+                    <div key={key}>
+                        <p className={classes.FoodSelected} key={key}>{this.items[key]}</p>
+                    </div>
+
+                ))}
             </Aux>
         );
     }
