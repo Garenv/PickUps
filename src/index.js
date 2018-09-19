@@ -11,6 +11,7 @@ import checkOutModalReducer from './store/checkOutModalReducer';
 import payModalButtonReducer from './store/payModalButtonReducer';
 import showPayModalReducer from './store/showPayModalReducer';
 import showBackdropReducer from "./store/showBackdropReducer";
+import closePayModalButtonReducer from './store/closePayModalButtonReducer';
 
 // Routing
 import { BrowserRouter } from 'react-router-dom';
@@ -19,6 +20,7 @@ import { BrowserRouter } from 'react-router-dom';
 const rootReducer = combineReducers({
     isOpen: checkOutModalReducer,
     closeMainModalButton: payModalButtonReducer,
+    closePayModalButton: closePayModalButtonReducer,
     showPayModal: showPayModalReducer,
     showBackdropModal: showBackdropReducer
 });

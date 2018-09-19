@@ -24,7 +24,6 @@ class TacoTypes extends Component {
 
         this.state = {
             selectedItems: [],
-            modalIsOpen: false,
 
             foodClicks: {
                 chickenTaco: 0,
@@ -145,12 +144,11 @@ class TacoTypes extends Component {
                         </div>
                     ))}
 
-                    <PayModal showPayModal={this.props.showPayModal} />
-                    <PayModalBackdrop showPayModalBackdrop={this.props.showBackdropModal} />
+                    {/*<PayModalBackdrop showPayModalBackdrop={this.props.showBackdropModal} />*/}
+                    <PayModal showPayModal={this.props.showPayModal} closePayModal={() => this.props.closePayModalButtonRedux()}/>
                     <PayModalButton openPayModalButton={() => this.props.showPayModalRedux()} />
 
-                    <CloseModal closeMainModalButton={() => this.props.closeModalPayRedux()} />
-
+                    <CloseModal closeMainModalButton={() => this.props.closeMainModalPayRedux()} />
 
                 </Modal>
 
@@ -171,7 +169,8 @@ const mapStateToProps = state => {
         isOpen: state.isOpen.isModalOpen,
         showPayModal: state.showPayModal.showPayModal,
         showBackdropModal: state.showBackdropModal.showBackdropModal,
-        closeMainModalButton: state.closeMainModalButton.closeMainModalButton
+        closeMainModalButton: state.closeMainModalButton.closeMainModalButton,
+        closePayModalButton: state.closePayModalButton.closePayModalButton
     };
 };
 
@@ -179,7 +178,8 @@ const mapDispatchToProps = dispatch => {
     return {
         openModalRedux: () => dispatch({type: actionType.OPEN_MODAL}),
         showPayModalRedux: () => dispatch({type: actionType.SHOW_PAY_MODAL}),
-        closeModalPayRedux: () => dispatch({type: actionType.CLOSE_MODAL})
+        closeMainModalPayRedux: () => dispatch({type: actionType.CLOSE_MODAL}),
+        closePayModalButtonRedux: () => dispatch({type: actionType.CLOSE_PAY_MODAL_BUTTON})
     };
 };
 

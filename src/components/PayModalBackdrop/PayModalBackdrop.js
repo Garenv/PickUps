@@ -1,13 +1,9 @@
 import React from 'react';
 
-import './PayModalBackdrop.css';
+import classes from './PayModalBackdrop.css';
 
-const backdrop = (props) => {
-    const cssClasses = ['Backdrop', props.showPayModalBackdrop ? 'BackdropOpen' : 'BackdropClosed'];
-
-    return (
-        <div className={cssClasses.join(' ')}></div>
-    );
-};
+const backdrop = (props) => (
+    props.showBackdropModal ? <div className={classes.Backdrop} onClick={props.clicked}></div> : null
+);
 
 export default backdrop;

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './PayModal.css';
-
 const modal = props => {
     const cssClasses = ["Modal", props.showPayModal ? "ModalOpen" : "ModalClosed"];
 
@@ -12,5 +10,6 @@ const modal = props => {
         </div>
     );
 };
+
 
 export default modal;
