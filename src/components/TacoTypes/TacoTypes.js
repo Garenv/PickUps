@@ -160,7 +160,6 @@ class TacoTypes extends Component {
                     <div key={key}>
                         <p className={classes.FoodSelected} key={key}>{this.items[key]}</p>
                     </div>
-
                 ))}
             </Aux>
         );
