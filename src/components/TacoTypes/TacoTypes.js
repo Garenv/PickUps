@@ -34,8 +34,8 @@ class TacoTypes extends Component {
         };
 
         this.items = {
-            chickenTaco: 'Button One',
-            beefTaco: 'Button Two',
+            chickenTaco: 'Chicken Taco',
+            beefTaco: 'Beef Taco',
             chickenBurrito: 'Chicken Burrito',
             beefBurrito: 'Beef Burrito'
         };
