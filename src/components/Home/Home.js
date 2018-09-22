@@ -12,7 +12,7 @@ class Home extends Component {
         // this.logout = this.logout.bind(this);
         this.state = {
             flag: false
-        }
+        };
     }
 
     foodHandler () {

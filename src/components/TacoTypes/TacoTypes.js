@@ -12,7 +12,6 @@ import FoodButton from '../Buttons/FoodButton';
 import PayModalButton from '../../containers/PayModalButton/PayModalButton';
 import CheckoutButton from '../../containers/CheckoutButton/CheckoutButton';
 import PayModal from '../../components/PayModal/PayModal';
-import PayModalBackdrop from '../../components/PayModalBackdrop/PayModalBackdrop';
 import CloseModal from '../../components/Buttons/CloseModal/CloseModal';
 import Title from '../../components/Title/Title';
 

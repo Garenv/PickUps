@@ -21,7 +21,7 @@
     float: right;
     text-decoration: none;
     vertical-align: middle;
-    position: fixed;
+    position: absolute;
     top: 12%;
     right: 0;
 }
