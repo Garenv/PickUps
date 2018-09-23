@@ -133,9 +133,9 @@ class TacoTypes extends Component {
                 <Modal isOpen={this.props.isOpen}>
                     {this.state.selectedItems.map(key => (
                         <div key={key}>
-                            <p className={classes.FoodSelected} key={key}>{this.items[key]}</p>
                             <br/>
                             <div className={classes.bothButtons}>
+                                <p className={classes.FoodSelected} key={key}>{this.items[key]}</p>
                                 <button key={key} className={classes.AddButton} onClick={() => this.selectFood(key)}>+</button>
                                 <button key={key} className={classes.SubtractButton} onClick={() => this.deselectFood(key)}>-</button>
                                 <p className={classes.Clicks} key={key}> <b>X</b> {this.state.foodClicks[key]}</p>
