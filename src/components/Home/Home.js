@@ -48,16 +48,18 @@ class Home extends Component {
             <div>
                 <Title authenticated={true}/>
                 <h3>{this.displayName()}</h3>
-                <h1 className={classes.Bam}>Choose your favorite truck!</h1>
+                <div className={classes.Body}>
+                    <h1 className={classes.Bam}>Choose your favorite truck!</h1>
 
-                <Link to={{
-                    pathname: '/TacoTypes'
-                }}>
-                    <button onClick={this.foodHandler.bind(this)} className="btn btn-primary btn-lg btn-block">Taco Del Rey</button>
-                </Link>
+                    <Link to={{
+                        pathname: '/TacoTypes'
+                    }}>
+                        <button onClick={this.foodHandler.bind(this)} className="btn btn-primary btn-lg btn-block">Taco Del Rey</button>
+                    </Link>
 
-                <button type="button" className="btn btn-secondary btn-lg btn-block">Local Deli</button>
-                <button type="button" className="btn btn-secondary btn-lg btn-block">Local Restaurant</button>
+                    <button type="button" className="btn btn-secondary btn-lg btn-block">Local Deli</button>
+                    <button type="button" className="btn btn-secondary btn-lg btn-block">Local Restaurant</button>
+                </div>
             </div>
         );
     }
