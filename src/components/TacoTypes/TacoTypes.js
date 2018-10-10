@@ -123,7 +123,7 @@ class TacoTypes extends Component {
                 <div>
                     <Link to={{pathname: '/ChooseTruck'}} >
                         <button className={classes.BackButton} onClick='../Home/Home.js'>Back</button>
-                    </Link>
+                    </Link> 
                 </div>
 
                 {Object.keys(this.items).map((key, index) => (

@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './CheckoutButton.css';
 
-const button = (props) => (
-    <button className={classes.Button} onClick={props.clicked}>Checkout</button>
+const CheckoutButton = (props) => (
+    <button className={classes.Button} id="test" onClick={props.clicked}>Checkout</button>
 );
 
-export default button;
+export default CheckoutButton;
