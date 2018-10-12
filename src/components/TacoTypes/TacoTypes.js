@@ -17,7 +17,7 @@ import Title from '../../components/Title/Title';
 
 import classes from './TacoTypes.css';
 
-class TacoTypes extends Component {
+export class TacoTypes extends Component {
     constructor(props) {
         super(props);
 
@@ -42,9 +42,10 @@ class TacoTypes extends Component {
 
     selectFood(food) {
         this.setState(state => {
-            let selected = this.state.selectedItems;
             let user = firebase.auth().currentUser;
             let userEmail = "";
+
+            let selected = this.state.selectedItems;
 
             if (!selected.includes(food)) {
                 selected.push(food);
@@ -108,7 +109,7 @@ class TacoTypes extends Component {
 
         return (
             <div className={classes.DisplayEmailEat}>
-                <p>Welcome, {userEmail}!</p>
+                <p className={classes.WelcomeEmail}>Welcome, {userEmail}!</p>
             </div>
         );
     };
@@ -123,7 +124,7 @@ class TacoTypes extends Component {
                 <div>
                     <Link to={{pathname: '/ChooseTruck'}} >
                         <button className={classes.BackButton} onClick='../Home/Home.js'>Back</button>
-                    </Link> 
+                    </Link>
                 </div>
 
                 {Object.keys(this.items).map((key, index) => (

@@ -187,6 +187,13 @@
     font-family: "Heiti TC";
 }
 
+.WelcomeEmail {
+    display: block;
+    animation: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
 .Eat {
     font-family: Telugu MN; /* Songti TC */
     text-align: center;
@@ -194,5 +201,20 @@
 
 h3 {
     text-align: center;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
