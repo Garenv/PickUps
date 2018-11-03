@@ -5,13 +5,16 @@ import firebase from "firebase";
 
 import TacoTypes from '../../components/TacoTypes/TacoTypes';
 import Title from '../../components/Title/Title';
+import Search from '../../containers/Search/Search';
 
 class Home extends Component {
     constructor(props) {
         super(props);
         // this.logout = this.logout.bind(this);
         this.state = {
-            flag: false
+            searchString: "",
+            flag: false,
+
         };
     }
 
@@ -60,6 +63,9 @@ class Home extends Component {
                     <button type="button" className="btn btn-secondary btn-lg btn-block">Local Deli</button>
                     <button type="button" className="btn btn-secondary btn-lg btn-block">Local Restaurant</button>
                 </div>
+
+                <Search/>
+
             </div>
         );
     }
