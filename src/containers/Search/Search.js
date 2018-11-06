@@ -52,7 +52,7 @@ class Search extends Component {
         let search = this.state.searchString.trim().toLowerCase();
 
         if(search.length > 0) {
-            _places = _places.filter(function(places) {
+            places = _places.filter(function(places) {
                 return places.name.toLowerCase().match(search);
             });
         }
