@@ -13,6 +13,7 @@ import PayModalButton from '../../containers/PayModalButton/PayModalButton';
 import CheckoutButton from '../../containers/CheckoutButton/CheckoutButton';
 import PayModal from '../../components/PayModal/PayModal';
 import CloseModal from '../../components/Buttons/CloseModal/CloseModal';
+import PayModalBackDrop from '../../components/PayModalBackdrop/PayModalBackdrop';
 import Title from '../../components/Title/Title';
 
 import classes from './TacoTypes.css';
@@ -23,6 +24,7 @@ export class TacoTypes extends Component {
 
         this.state = {
             selectedItems: [],
+            modalIsOpen: false,
 
             foodClicks: {
                 chickenTaco: 0,
@@ -114,6 +116,14 @@ export class TacoTypes extends Component {
         );
     };
 
+    showModal = () => {
+      this.setState({modalIsOpen: true});
+    };
+
+    closeModal = () => {
+        this.setState({modalIsOpen: false});
+    };
+
     render() {
         return (
             <Aux>
@@ -144,12 +154,10 @@ export class TacoTypes extends Component {
                         </div>
                     ))}
 
-                    {/*<PayModalBackdrop showPayModalBackdrop={this.props.showBackdropModal} />*/}
-                    <PayModal showPayModal={this.props.showPayModal} closePayModal={() => this.props.closePayModalButtonRedux()}/>
-                    <PayModalButton openPayModalButton={() => this.props.showPayModalRedux()} />
-
+                    <PayModal showPayModal={this.state.modalIsOpen} closePayModal={this.closeModal}/>
+                    <PayModalBackDrop showBackdropModal={this.state.modalIsOpen}/>
+                    <PayModalButton openPayModalButton={this.showModal} />
                     <CloseModal closeMainModalButton={() => this.props.closeMainModalPayRedux()} />
-
                 </Modal>
 
                 <CheckoutButton clicked={() => this.props.openModalRedux()}/>
@@ -167,10 +175,10 @@ export class TacoTypes extends Component {
 const mapStateToProps = state => {
     return {
         isOpen: state.isOpen.isModalOpen,
-        showPayModal: state.showPayModal.showPayModal,
+        // showPayModal: state.showPayModal.showPayModal,
         showBackdropModal: state.showBackdropModal.showBackdropModal,
-        closeMainModalButton: state.closeMainModalButton.closeMainModalButton,
-        closePayModalButton: state.closePayModalButton.closePayModalButton
+        closeMainModalButton: state.closeMainModalButton.closeMainModalButton
+        // closePayModalButton: state.closePayModalButton.closePayModalButton
     };
 };
 
@@ -178,8 +186,8 @@ const mapDispatchToProps = dispatch => {
     return {
         openModalRedux: () => dispatch({type: actionType.OPEN_MODAL}),
         showPayModalRedux: () => dispatch({type: actionType.SHOW_PAY_MODAL}),
-        closeMainModalPayRedux: () => dispatch({type: actionType.CLOSE_MODAL}),
-        closePayModalButtonRedux: () => dispatch({type: actionType.CLOSE_PAY_MODAL_BUTTON})
+        closeMainModalPayRedux: () => dispatch({type: actionType.CLOSE_MODAL})
+        // closePayModalButtonRedux: () => dispatch({type: actionType.CLOSE_PAY_MODAL_BUTTON})
     };
 };
 
