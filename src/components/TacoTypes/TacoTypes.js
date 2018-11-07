@@ -157,6 +157,7 @@ export class TacoTypes extends Component {
                     <PayModal showPayModal={this.state.modalIsOpen} closePayModal={this.closeModal}/>
                     <PayModalBackDrop showBackdropModal={this.state.modalIsOpen}/>
                     <PayModalButton openPayModalButton={this.showModal} />
+
                     <CloseModal closeMainModalButton={() => this.props.closeMainModalPayRedux()} />
                 </Modal>
 

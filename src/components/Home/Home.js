@@ -14,7 +14,6 @@ class Home extends Component {
         this.state = {
             searchString: "",
             flag: false,
-
         };
     }
 

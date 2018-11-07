@@ -18,6 +18,15 @@ class Login extends Component {
         this.signup = this.signup.bind(this);
     }
 
+    componentDidMount() {
+        let c = document.getElementById("myCanvas");
+        let ctx = c.getContext("2d");
+
+        ctx.beginPath();
+        ctx.arc(100,75,50,0,2*Math.PI);
+        ctx.stroke();
+    }
+
     handleChange(e) {
         this.setState({[e.target.name]: e.target.value});
     }
@@ -44,6 +53,7 @@ class Login extends Component {
     render() {
         return (
             <div className={classes.Middle}>
+                <canvas style={{alignItems: "left"}} id="myCanvas" width="300" height="150">hi</canvas>
 
                 {this.state.loading && <Spinner/>}
 
