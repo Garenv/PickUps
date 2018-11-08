@@ -9,3 +9,8 @@
     transform: translate(-50%, -50%);
 }
 
+canvas {
+    position: relative;
+    right: 30rem;
+}
+

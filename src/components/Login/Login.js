@@ -22,8 +22,19 @@ class Login extends Component {
         let c = document.getElementById("myCanvas");
         let ctx = c.getContext("2d");
 
+        const circleCords = {
+            x: 100,
+            y: 75
+        };
+
+        const textCords = {
+            x: circleCords - 5,
+            y: circleCords + 5
+        };
+
         ctx.beginPath();
-        ctx.arc(100,75,50,0,2*Math.PI);
+        ctx.arc(circleCords.x,circleCords.y, 50, 0, 2*Math.PI);
+        ctx.fillText("testtesttesttesttesttesttesttesttesttest", textCords.x, textCords.y);
         ctx.stroke();
     }
 
@@ -53,7 +64,8 @@ class Login extends Component {
     render() {
         return (
             <div className={classes.Middle}>
-                <canvas style={{alignItems: "left"}} id="myCanvas" width="300" height="150">hi</canvas>
+
+                <canvas id="myCanvas" width="400" height="400" />
 
                 {this.state.loading && <Spinner/>}
 

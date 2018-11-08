@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2fa8945-9cb0-4d74-aa02-078e2440c23b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PayModal/PayModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PayModal/PayModal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PayModalBackdrop/PayModalBackdrop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PayModalBackdrop/PayModalBackdrop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +20,8 @@
       <file leaf-file-name="TacoTypes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="156" column="98" selection-start-line="156" selection-start-column="98" selection-end-line="156" selection-end-column="98" />
+            <state relative-caret-position="200">
+              <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -60,11 +56,20 @@
       <file leaf-file-name="Login.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Login/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="55" column="94" selection-start-line="55" selection-start-column="94" selection-end-line="55" selection-end-column="94" />
+            <state relative-caret-position="-201">
+              <caret line="67" column="59" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Login/Login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -160,7 +165,6 @@
         <option value="$PROJECT_DIR$/Modal.css" />
         <option value="$PROJECT_DIR$/food-selected.js" />
         <option value="$PROJECT_DIR$/src/food-selected.js" />
-        <option value="$PROJECT_DIR$/src/components/Login/Login.css" />
         <option value="$PROJECT_DIR$/src/containers/CloseModalButton/CloseModalButton.css" />
         <option value="$PROJECT_DIR$/src/containers/CloseModalButton/CloseModalButton.js" />
         <option value="$PROJECT_DIR$/src/store/checkOutModalReducer.js" />
@@ -202,6 +206,7 @@
         <option value="$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.js" />
         <option value="$PROJECT_DIR$/src/components/PayModal/PayModal.css" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
+        <option value="$PROJECT_DIR$/src/components/Login/Login.css" />
         <option value="$PROJECT_DIR$/src/components/Login/Login.js" />
       </list>
     </option>
@@ -247,6 +252,13 @@
               <item name="pickups" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pickups" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pickups" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -373,7 +385,7 @@
       <workItem from="1539376864734" duration="605000" />
       <workItem from="1541259960256" duration="5200000" />
       <workItem from="1541517523450" duration="149000" />
-      <workItem from="1541519225135" duration="11706000" />
+      <workItem from="1541519225135" duration="16125000" />
     </task>
     <servers />
   </component>
@@ -410,7 +422,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236807000" />
+    <option name="totallyTimeSpent" value="241226000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -457,13 +469,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/PayModalBackdrop/PayModalBackdrop.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -758,16 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="156" column="98" selection-start-line="156" selection-start-column="98" selection-end-line="156" selection-end-column="98" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PayModalBackdrop/PayModalBackdrop.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -819,10 +814,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TacoTypes/TacoTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Login/Login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Login/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="55" column="94" selection-start-line="55" selection-start-column="94" selection-end-line="55" selection-end-column="94" />
+        <state relative-caret-position="-201">
+          <caret line="67" column="59" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
