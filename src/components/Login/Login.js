@@ -21,21 +21,7 @@ class Login extends Component {
     componentDidMount() {
         let c = document.getElementById("myCanvas");
         let ctx = c.getContext("2d");
-
-        // const circleCords = {
-        //     x: 100,
-        //     y: 75
-        // };
-        //
-        // const textCords = {
-        //     x: circleCords - 5,
-        //     y: circleCords + 5
-        // };
-        //
-        // ctx.beginPath();
-        // ctx.arc(circleCords.x,circleCords.y, 50, 0, 2*Math.PI);
-        // ctx.fillText("testtesttesttesttesttesttesttesttesttest", textCords.x, textCords.y);
-        // ctx.stroke();
+        ctx.fillStyle = "blue";
 
         const x_arc = 100;
         const y_arc = 75;
@@ -50,11 +36,6 @@ class Login extends Component {
         ctx.arc(x_arc, y_arc, radius, 0 , 2 * Math.PI);
         ctx.fillText("Rated #1 Website!", x_text, y_text);
         ctx.stroke();
-
-
-
-
-
     }
 
     handleChange(e) {

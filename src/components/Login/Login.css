@@ -4,13 +4,14 @@
 
 .Middle {
     position: fixed;
-    top: 50%;
+    top: 10rem;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 canvas {
     position: relative;
-    right: 30rem;
+    top: 15rem;
+    right: 25rem;
 }
 
